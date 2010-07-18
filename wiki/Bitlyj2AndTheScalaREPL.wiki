@@ -1,0 +1,22 @@
+#labels bitlyj2.0,scala
+#Using bitlyj 2 in the Scala REPL
+
+= Introduction =
+
+
+{{{
+scala> import com.rosaloves.bitlyj._                                                            
+import com.rosaloves.bitlyj._
+
+scala> import Bitly._                                                                           
+import Bitly._
+
+scala> val bitly = as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07")
+bitly: com.rosaloves.bitlyj.Shortener = Shortener [endPoint=http://api.bit.ly/v3/]
+
+scala> bitly.call(clicks("http://bit.ly/H4HnM"))                        
+res0: com.rosaloves.bitlyj.UrlClicks = UrlClicks [globalClicks=99, userClicks=99, url=Url [globalHash=40rYlN, hash=null, longUrl=null, shortUrl=http://bit.ly/H4HnM]]
+
+scala> res0.getTotalClicks
+res1: Long = 198
+}}}
