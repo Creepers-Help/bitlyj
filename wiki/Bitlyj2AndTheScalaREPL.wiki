@@ -3,6 +3,7 @@
 
 = Introduction =
 
+Bitlyj 2's DSL makes it feel quite natural in Scala. What's more, the library is strict about quality toString overrides, as you can see in this example REPL session:
 
 {{{
 scala> import com.rosaloves.bitlyj._                                                            
@@ -21,10 +22,14 @@ scala> res0.getTotalClicks
 res1: Long = 198
 }}}
 
+Of course, you could do it in one go:
+
 {{{
 as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07").call(clicks("http://bit.ly/H4HnM")).getTotalClicks
 res1: Long = 198
 }}}
+
+Watch out! Using that demo account will get you limited!
 
 {{{
 com.rosaloves.bitlyj.BitlyException: RATE_LIMIT_EXCEEDED
@@ -37,3 +42,5 @@ com.rosaloves.bitlyj.BitlyException: RATE_LIMIT_EXCEEDED
 	at RequestResult$result(<console>)
 	at sun.reflect.NativeMethodAcces...
 }}}
+
+Yay! Error nice handling!
