@@ -20,3 +20,20 @@ res0: com.rosaloves.bitlyj.UrlClicks = UrlClicks [globalClicks=99, userClicks=99
 scala> res0.getTotalClicks
 res1: Long = 198
 }}}
+
+{{{
+as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07").call(clicks("http://bit.ly/H4HnM")).getTotalClicks
+res1: Long = 198
+}}}
+
+{{{
+com.rosaloves.bitlyj.BitlyException: RATE_LIMIT_EXCEEDED
+	at com.rosaloves.bitlyj.Shortener.filterErrorResponse(Shortener.java:77)
+	at com.rosaloves.bitlyj.Shortener.call(Shortener.java:40)
+	at .<init>(<console>:9)
+	at .<clinit>(<console>)
+	at RequestResult$.<init>(<console>:3)
+	at RequestResult$.<clinit>(<console>)
+	at RequestResult$result(<console>)
+	at sun.reflect.NativeMethodAcces...
+}}}
