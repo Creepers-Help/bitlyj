@@ -31,4 +31,4 @@ Validate validate = new Validate("notbilytapi", "not_apikey");
 boolean isValid = as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07").call(validate);
 }}}
 
-Note that you don't need to do any error checking. In bitly 2, it's the shortener implementation's job to invoke the remote method, parse its payload, and do basic error checking before ever calling your method implementation. If an I/O error occurs, or bitly responds with and error message (or even garbled data), your method won't be called and the shortener will have thrown and informative exception.
+Note that you don't need to do any error checking. In bitlyj 2, it's the shortener implementation's job to invoke the remote method, parse its payload, and do basic error checking before ever calling your method implementation. If an I/O error occurs, or bitly responds with and error message (or even garbled data), your method won't be called and the shortener will have thrown and informative exception.
