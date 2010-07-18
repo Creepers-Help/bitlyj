@@ -16,7 +16,8 @@ public class Validate extends BitlyMethod<Boolean> {
 
 	@Override
 	public Boolean apply(Document document) {
-		String valid = Dom.getTextContent(document.getElementsByTagName("valid").item(0));
+		String valid = Dom.getTextContent(
+			document.getElementsByTagName("valid").item(0));
 		return Integer.parseInt(valid) == 1;
 	}
 
