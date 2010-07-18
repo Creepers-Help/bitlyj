@@ -12,7 +12,7 @@ import com.rosaloves.bitlyj.*;
 import static com.rosaloves.bitlyj.Bitly.*
 }}}
 
-The first will expose, among other things, all types they will result from the core methods (those supported directly in bitlyj). The static import brings in support for the DSL. You don't have to use it like this, but it's quite nice.
+The first will expose, among other things, all types taty will result from the core methods (those supported directly in bitlyj). The static import brings in support for the DSL. You don't have to use it like this, but it's quite nice.
 
 The quickest way to shorten a URL:
 
@@ -38,4 +38,4 @@ Once you have a shortener, you can call methods on it:
 bitly.call(shorten("http://rosaloves.com/"));
 }}}
 
-Like `as`, `shorten` is also part of the DSL interface. Peruse [http://code.google.com/p/bitlyj/source/browse/#svn/trunk/src/main/java/com/rosaloves/bitlyj Methods.java] for an accurate list of DSL methods.
+Like `as`, `shorten` is also part of the DSL interface. Peruse [http://code.google.com/p/bitlyj/source/browse/#svn/trunk/src/main/java/com/rosaloves/bitlyj Methods.java] for an accurate list of DSL methods
