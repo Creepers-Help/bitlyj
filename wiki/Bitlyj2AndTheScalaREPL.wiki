@@ -43,4 +43,29 @@ com.rosaloves.bitlyj.BitlyException: RATE_LIMIT_EXCEEDED
 	at sun.reflect.NativeMethodAcces...
 }}}
 
+Other errors:
+
+{{{
+scala> as("aintnobody", "fakekey").call(shorten("http://google.com"))
+com.rosaloves.bitlyj.BitlyException: INVALID_LOGIN
+	at com.rosaloves.bitlyj.Shortener.filterErrorResponse(Shortener.java:77)
+	at com.rosaloves.bitlyj.Shortener.call(Shortener.java:40)
+	at .<init>(<console>:9)
+	at .<clinit>(<console>)
+	at RequestResult$.<init>(<console>:3)
+	at RequestResult$.<clinit>(<console>)
+	at RequestResult$result(<console>)
+	at sun.reflect.NativeMethodAccessorImp...
+scala> as("aintnobody", "").call(shorten("http://google.com"))    
+com.rosaloves.bitlyj.BitlyException: MISSING_ARG_APIKEY
+	at com.rosaloves.bitlyj.Shortener.filterErrorResponse(Shortener.java:77)
+	at com.rosaloves.bitlyj.Shortener.call(Shortener.java:40)
+	at .<init>(<console>:9)
+	at .<clinit>(<console>)
+	at RequestResult$.<init>(<console>:3)
+	at RequestResult$.<clinit>(<console>)
+	at RequestResult$result(<console>)
+	at sun.reflect.NativeMethodAccess...
+}}}
+
 Yay! Nice error handling!
