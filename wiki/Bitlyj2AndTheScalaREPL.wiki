@@ -43,4 +43,4 @@ com.rosaloves.bitlyj.BitlyException: RATE_LIMIT_EXCEEDED
 	at sun.reflect.NativeMethodAcces...
 }}}
 
-Yay! Error nice handling!
+Yay! Nice error handling!
