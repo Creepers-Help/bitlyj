@@ -4,6 +4,7 @@
 = Introduction =
 
 *Bitlyj 2 is still alpha.*
+== Basic Use ==*
 
 First off, imports:
 
@@ -39,3 +40,12 @@ bitly.call(shorten("http://rosaloves.com/"));
 }}}
 
 Like `as`, `shorten` is also part of the DSL interface. Peruse [http://code.google.com/p/bitlyj/source/browse/#svn/trunk/src/main/java/com/rosaloves/bitlyj Methods.java] for an accurate list of DSL methods
+
+== Bulk Methods ==
+Some bitly methods support multiple arguments. `info` and `clicks` for example can take an arbitrary number of `hash` or `shortUrl` arguments. You can do this in bitlyj just like you'd expect:
+
+{{{
+for(Info info : bitly.call(info("http://tcrn.ch/a4MSUH", "http://bit.ly/1YKMfY"))) {
+	// do something with info
+}
+}}}
