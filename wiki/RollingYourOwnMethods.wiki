@@ -5,7 +5,7 @@
 
 *The details are slim until the API is stable.*
 
-Here's how you roll your own method. The following example would add support for the bitly's  [http://code.google.com/p/bitly-api/wiki/ApiDocumentation#/v3/validate validate] method.
+Here's how you roll your own method. The following example would add support for bitly's  [http://code.google.com/p/bitly-api/wiki/ApiDocumentation#/v3/validate validate] method.
 
 {{{
 public class Validate extends BitlyMethod<Boolean> {
