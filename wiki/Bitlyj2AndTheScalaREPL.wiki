@@ -1,4 +1,4 @@
-#labels bitlyj2.0,scala
+#labels bitlyj2.0,scala,Featured
 #Using bitlyj 2 in the Scala REPL
 
 = Introduction =
