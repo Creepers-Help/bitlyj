@@ -5,7 +5,7 @@
 
 *Bitlyj 2 is still beta.*
 
-Bitlyj 2's DSL makes it feel quite natural in Scala. What's more, the library is strict about quality toString overrides, as you can see in this example REPL session:
+The DSL in bitlyj 2 makes it feel quite natural in Scala. What's more, the library is strict about quality toString overrides, as you can see in this example REPL session:
 
 {{{
 scala> import com.rosaloves.bitlyj._                                                            
