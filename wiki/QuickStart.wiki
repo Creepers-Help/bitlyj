@@ -21,19 +21,18 @@ The quickest way to shorten a URL:
 as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07").call(shorten("http://rosaloves.com/"));
 }}}
 
-Breaking it down, `as` is a factory method for retrieving a Shortener instance.
+Breaking it down, `as` is a factory method for retrieving aProvider instance.
 
 {{{
-Shortener bitly = as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
+Providner bitly = as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
 }}}
 
 It's static so as to support a nice DSL-like interface. If you for some reason prefer verbosity, you can qualify it more fully:
 
-{{{
-Shortener bitly = Bitly.as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
+{{{Provider bitly = Bitly.as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
 }}}
 
-Once you have a shortener, you can call methods on it:
+Once you have a providner, you can call methods on it:
 
 {{{
 bitly.call(shorten("http://rosaloves.com/"));
