@@ -44,7 +44,7 @@ Like `as`, `shorten` is also part of the DSL interface. Peruse [http://code.goog
 Some bitly methods support multiple arguments. `info` and `clicks` for example can take an arbitrary number of `hash` or `shortUrl` arguments. You can do this in bitlyj just like you'd expect:
 
 {{{
-for(Info info : bitly.call(info("http://tcrn.ch/a4MSUH", "http://bit.ly/1YKMfY"))) {
+for(UrlInfo info : bitly.call(info("http://tcrn.ch/a4MSUH", "http://bit.ly/1YKMfY"))) {
 	// do something with info
 }
 }}}
