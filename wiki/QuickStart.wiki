@@ -10,7 +10,7 @@ First off, imports:
 
 {{{
 import com.rosaloves.bitlyj.*;
-import static com.rosaloves.bitlyj.Bitly.*
+import static com.rosaloves.bitlyj.Bitly.;*
 }}}
 
 The first will expose, among other things, all types taty will result from the core methods (those supported directly in bitlyj). The static import brings in support for the DSL. You don't have to use it like this, but it's quite nice.
@@ -48,3 +48,15 @@ for(Info info : bitly.call(info("http://tcrn.ch/a4MSUH", "http://bit.ly/1YKMfY")
 	// do something with info
 }
 }}}
+
+== Working With j.mp ==
+
+Working with j.mp is exactly the same as working with bit.ly, with the exception of the, imports:
+
+{{{
+import com.rosaloves.bitlyj.*;
+import static com.rosaloves.bitlyj.Bitly.;
+import static com.rosaloves.bitlyj.Jmp.*;
+}}}
+
+Notice import of `com.rosaloves.bitlyj.Jmp.*`. This brings in a version of the `as` function that yields Provider instances pointing to the j.mp endpoint. Everything else is the same.
