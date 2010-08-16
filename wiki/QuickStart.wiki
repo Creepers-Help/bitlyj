@@ -26,7 +26,7 @@ Breaking it down, `as` is a factory method for retrieving aProvider instance.
 Providner bitly = as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
 }}}
 
-It's static so as to support a nice DSL-like interface. If you for some reason prefer verbosity, you can qualify it more fully:
+It's static so as to support a nice DSL-like interface. If you prefer verbosity, you can qualify it more fully:
 
 {{{Provider bitly = Bitly.as("bitlyapidemo", "R_0da49e0a9118ff35f52f629d2d71bf07");
 }}}
