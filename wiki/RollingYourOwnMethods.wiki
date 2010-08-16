@@ -3,8 +3,6 @@
 
 = Details =
 
-*The details are slim until the API is stable.*
-
 bitlyj2 uses the [http://download.oracle.com/docs/cd/E17476_01/javase/1.5.0/docs/api/org/w3c/dom/package-summary.html native DOM APIs] of the java platform to consume XML payloads that result from bit.ly method invocations. When you implement a bitly method, your method instance receives a [http://download.oracle.com/docs/cd/E17476_01/javase/1.5.0/docs/api/org/w3c/dom/Document.html Document] instance.
 
 == An Example: v3/validate ==
