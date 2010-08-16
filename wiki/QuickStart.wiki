@@ -3,7 +3,6 @@
 
 = Introduction =
 
-*Bitlyj 2 is still alpha.*
 == Basic Use ==*
 
 First off, imports:
