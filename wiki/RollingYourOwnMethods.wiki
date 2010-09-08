@@ -34,7 +34,7 @@ public class Validate implements BitlyMethod<Boolean> {
 		return Arrays.asList(Pair.p("x_login", user), Pair.p("x_apiKey", apiKey));
 	}
 
-	public A apply(Provider provider, Document document) {
+	public Boolean apply(Provider provider, Document document) {
 		String valid = Dom.getTextContent(
 			document.getElementsByTagName("valid").item(0));
 		return Integer.parseInt(valid) == 1;
